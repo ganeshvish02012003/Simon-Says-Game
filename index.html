@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon_Says_Game </title>
+    <link rel="stylesheet" href="asset/CSS/style.css" />
+  </head>
+  <body>
+    <div class="startGame">
+      <h1 class="heading">Simon Says Game</h1>
+      <button class="startBtn">Start Game</button>
+
+      <div class="btn-container">
+        <span id="hiscoreBox" class="hiscoreBox">Hi.Scroe:0</span>
+        <div class="line-1">
+          <div class="btn red" id="red" type="button"></div>
+          <div class="btn yellow" id="yellow" type="button"></div>
+        </div>
+        <div class="scoreBoard">
+          <div id="scoreBox" class="scoreBox">score: 0</div>
+        </div>
+        <div class="line-2">
+          <div class="btn green" id="green" type="button"></div>
+          <div class="btn purple" id="purple" type="button"></div>
+        </div>
+      </div>
+
+      <div class="endGame">
+        <p class="gameOver">Game Over!</p>
+
+        <p class="yourScore">
+          your scroe <br /><b class="score"></b> <br />
+          <img
+            class="high_score_ican"
+            src="asset/image/high_score.png"
+          />
+          <span class="end_Hi_Score">Hi.Score:0</span>
+        </p>
+
+        <button class="restart">Restart</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="asset/JS/app.js"></script>
+</html>
+
+

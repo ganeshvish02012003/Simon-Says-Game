@@ -1,0 +1,250 @@
+body {
+  text-align: center;
+  background-image: url(../image/wood.jpg);
+  margin: 0;
+  margin-top: 1px;
+}
+.startGame {
+  background-image: url(../image/img.jpg);
+  background-size: 640px;
+  width: 600px;
+  height: 560px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 25%;
+  box-shadow: -2px -3px 10px black;
+}
+.heading {
+  color: white;
+  font-size: 4rem;
+  margin-top: 150px;
+}
+.startBtn {
+  background-color: rgba(28, 187, 224, 255);
+  color: rgb(240, 242, 255);
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+.startBtn:hover {
+  cursor: pointer;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  border: 10px solid rgb(55, 55, 55);
+  margin: 3rem;
+  margin-top: 4rem;
+  animation: sizeIncr 1s ease 0s normal;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.line-1,
+.line-2 {
+  margin-top: 20px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  display: none;
+  margin-right: 100px;
+}
+.red {
+  background-color: #d82b5f;
+  transform: rotate(45deg);
+  position: relative;
+  left: 80px;
+}
+.yellow {
+  background-color: #ff8411;
+  transform: rotate(45deg);
+  position: relative;
+  left: 80px;
+}
+.green {
+  background-color: #57b743;
+  transform: rotate(45deg);
+  position: relative;
+  right: 80px;
+}
+.purple {
+  background-color: #5f87ff;
+  transform: rotate(45deg);
+  position: relative;
+  right: 80px;
+}
+.flash {
+  background-color: rgb(255, 229, 81);
+}
+.userFlash {
+  background-color: rgb(58, 58, 58);
+}
+
+.scoreBoard {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  margin-top: 220px;
+  padding: 10px 30px;
+  transform: rotate(45deg);
+  height: 100px;
+  width: 150px;
+  border: 10px solid #5d5d5d;
+  border-radius: 20%;
+  animation: ScoreRotate 1s ease 0s normal;
+}
+.end_Hi_Score {
+  font-size: 1rem;
+  position: absolute;
+  top: 75px;
+  right: 10px;
+}
+.hiscoreBox {
+  color: white;
+  font-size: 1.5rem;
+  width: 100px;
+  position: relative;
+  right: -600px;
+  top: 5px;
+  text-decoration: underline;
+}
+.scoreBox {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 20px;
+  color: white;
+}
+.scoreBox span {
+  font-size: 3rem;
+}
+
+.endGame {
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  display: none;
+  text-align: center;
+}
+.gameOver {
+  margin-bottom: 0;
+  animation: foranimation 0.5s ease-in 0s normal;
+}
+.yourScore {
+  font-size: 1rem;
+  background-color: transparent;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  backdrop-filter: blur(15px);
+  height: 100px;
+}
+.score {
+  font-size: 5rem;
+  animation: scoreacimation 0.5s ease-in 0s normal;
+}
+.high_score_ican {
+  position: absolute;
+  top: 5px;
+  right: 170px;
+  width: 150px;
+  animation: high_score_Stanp 0.5s ease-in 0s normal;
+  display: none;
+}
+.restart {
+  background-color: rgba(28, 187, 224, 255);
+  color: rgb(240, 242, 255);
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 5px black;
+  animation: updown 0.5s linear 0s infinite alternate;
+}
+.restart:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 120px;
+  }
+  .startGame {
+    background-size: 720px;
+    width: 680px;
+    height: 640px;
+  }
+  .high_score_ican {
+    right: 200px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    margin-top: 350px;
+  }
+}
+
+@keyframes high_score_Stanp {
+  from {
+    width: 450px;
+  }
+  to {
+    width: 150px;
+  }
+}
+@keyframes sizeIncr {
+  from {
+    width: 10px;
+    height: 10px;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    transform: rotate(225deg);
+  }
+}
+@keyframes ScoreRotate {
+  from {
+    width: 10px;
+    height: 10px;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 150px;
+    height: 100px;
+    transform: rotate(225deg);
+  }
+}
+@keyframes updown {
+  from {
+    box-shadow: 3px 3px 3px black;
+  }
+  to {
+    box-shadow: 10px 5px 25px black;
+  }
+}
+@keyframes scoreacimation {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 5rem;
+  }
+}
+@keyframes foranimation {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 5rem;
+  }
+}
